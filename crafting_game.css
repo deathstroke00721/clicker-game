@@ -1,0 +1,180 @@
+*{
+   font-family: 'Baloo Chettan', cursive;
+}
+h1{
+   text-align: center;
+   font-size: 50px;
+}
+
+h2{
+   position: relative;
+   top: 20px;
+   margin-left: 10px;
+   margin-right: 10px;
+   margin-top: 20px;
+   right: 10px;
+   margin-bottom: -50px;
+   font-size: 18px;
+
+}
+h3{
+   position: relative;
+   left: 600px;
+   margin:-15px;
+
+}
+#worker-img{
+   width: 100px;
+   position: absolute;
+   left: 400px;
+   top: 30px;
+}
+#crafting-img{
+   width: 60px;
+   position: absolute;
+   left: 900px;
+   top: 30px;
+}
+.info{
+   position: absolute;
+   right: 10px;
+   bottom: 300px;
+   padding: 50px 10px;
+   background-color: grey;
+   border-radius: 5px;
+   animation: autobuy 1s linear infinite;
+}
+.back-bar{
+   width:300px;
+   height: 30px;
+   background-color: black;
+   border-bottom: 3px solid #a9a9a9;
+   position: relative;
+   left: 70px;
+   top: 100px;
+   border-radius: 7px;
+}
+.bar{
+   width:0px;
+   height: 30px;
+   background-color: #e58f40;
+   margin-bottom: 20px;
+   border-radius: 7px;
+   border-bottom: 3px solid #C4872F;
+
+}
+.infinite{
+   box-shadow: 0px 0px 2px 3px rgba(0, 0, 0, 0.1);
+   animation: autobuy 2s linear infinite;
+}
+@keyframes autobuy {
+   100%{
+      filter: hue-rotate(360deg);
+   }
+}
+/*OUTPUT*/
+.left-output{
+   position: relative;
+   top: 50px;
+   right: -450px;
+   font-size:30px;
+}
+.mid-output{
+   position: relative;
+   top:50px;
+   left: 450px;
+   font-size:30px;
+   margin: 0px 10px;
+}
+.right-output{
+   position: relative;
+   top: 50px;
+   left: 470px;
+   font-size:30px;
+}
+.bar2{
+   width:300px;
+   height: 30px;
+   background-color: #e58f40;
+   position: relative;
+   left: 800px;
+   bottom: 376px;
+   margin-bottom: 20px;
+}
+
+/*UPGRADE BUTTONS*/
+.upgrade{
+   position: relative;
+   top: 100px;
+   margin: 15px 10px;
+   padding:10px 10px;
+   background: #33db2e;
+   border-bottom: 5px solid #1da019;
+   color: white;
+   font-size: 14px;
+   border-left: none;
+   border-top: none;
+   border-right: none;
+   cursor: pointer;
+}
+.upgrade:active{
+   top:101px;
+   background: #1da019;
+}
+.auto{
+   position: relative;
+   top: 100px;
+   margin: 15px 0px;
+   margin-right: 20px;
+   padding:10px 10px;
+   background: #33db2e;
+   border-bottom: 5px solid #1da019;
+   color: white;
+   font-size: 14px;
+   border-left: none;
+   border-top: none;
+   border-right: none;
+   cursor: pointer;
+}
+.auto:active{
+   top:101px;
+   background: #1da019;
+}
+.disabled{
+   background: #b1b1b1;
+   border-bottom: 5px solid #a1a1a1;
+   cursor: not-allowed;
+}
+.back-bar input{
+   border-radius: 50%;
+   width: 30px;
+   height: 30px;
+   cursor: pointer;
+   background-color: white;
+   border: 3px solid;
+   border-color: #83d2db transparent;
+   float: left;
+   position: relative;
+   right: 50px;
+   transition-duration:0.5s;
+   transition-timing-function: ease-in-out;
+
+}
+
+.back-bar input:hover{
+   background-color: #c1c1c1;
+   transform: rotate(360deg);
+   border-color: #c42d67 transparent;
+}
+.back-bar input:active{
+   transition-duration: 0.1s;
+   transform: scale(0.8);
+   background-color: white;
+}
+
+input + span{
+   position: relative;
+   top: 103px;
+   margin: 0px 5px;
+   font-size: 20px;
+}

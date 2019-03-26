@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Crafting Game</title>
+      <link rel="stylesheet" href="crafting_game.css">
+      <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan" rel="stylesheet">
+      <link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/controller.png">
+   </head>
+   <body>
+      <img id="worker-img"src="worker.png" alt="https://cdn2.iconfinder.com/data/icons/factory-and-manufacturing/512/factory_manufacturing_company_industry-02-512.png"/><h1>Crafting Game</h1><img id="crafting-img" src="crafting_icon.png" alt="https://static.thenounproject.com/png/965230-200.png"/>
+
+      <div class="info">
+         <p>INSPIRATION & CREDIT:</p>
+         <p>Inspiration from <a href="https://store.steampowered.com/app/346900/AdVenture_Capitalist/">Adventure Capitalist</a></p>
+         <p>Inspiration from <a href="https://armory-and-machine.fandom.com/wiki/Armory_%26_Machine_Wiki">Armoury & Machine</a></p>
+         <p>Credit:<a href="https://icons8.com/icon/11907/game-controller">Game Controller icon by Icons8</a></p>
+      </div>
+
+      <div class="back-bar"><input id="energy-input" type="button"><div class="bar" id="energy"></div></div><span id="energy-output" class="left-output">0</span><span class="mid-output">/</span><span id="energy-max" class="right-output">0</span>
+      <input type="button" class="upgrade" id="energy-upgrade" value="Upgrade"><span id="energy-upgrade-cost">0</span><input type="button" class="upgrade" id="energy-max-upgrade" value="Max increase"><span id="energy-max-cost">0</span>
+      <input type="button" class="auto" id="energy-auto" value="Unlock Auto" ><span id="energy-auto-cost">0</span><h3>Cost: Free</h3>
+      <h2>Energy</h2>
+
+      <div class="back-bar"><input id="metal-input"type="button"><div class="bar" id="metal"></div></div><span id="metal-output" class="left-output">0</span><span class="mid-output">/</span><span id="metal-max" class="right-output">0</span>
+      <input type="button" class="upgrade" id="metal-upgrade" value="Upgrade"><span id="metal-upgrade-cost">0</span><input type="button" class="upgrade" id="metal-max-upgrade" value="Max increase"><span id="metal-max-cost">0</span>
+      <input type="button" class="auto" id="metal-auto" value="Unlock Auto" ><span id="metal-auto-cost">0</span><h3>Cost: Free</h3>
+      <h2>Metal</h2>
+
+      <div class="back-bar"><input id="wire-input"type="button"><div class="bar" id="wire"></div></div><span id="wire-output" class="left-output">0</span><span class="mid-output">/</span><span id="wire-max" class="right-output">0</span>
+      <input type="button" class="upgrade" id="wire-upgrade" value="Upgrade"><span id="wire-upgrade-cost">0</span><input type="button" class="upgrade" id="wire-max-upgrade" value="Max increase"><span id="wire-max-cost">0</span>
+      <input type="button" class="auto" id="wire-auto" value="Unlock Auto" ><span id="wire-auto-cost">0</span><h3>Cost: 2 metal 1 energy</h3>
+      <h2>Wire</h2>
+
+      <div class="back-bar"><input id="circuit-input"type="button"><div class="bar" id="circuit"></div></div><span id="circuit-output" class="left-output">0</span><span class="mid-output">/</span><span id="circuit-max" class="right-output">0</span>
+      <input type="button" class="upgrade" id="circuit-upgrade" value="Upgrade"><span id="circuit-upgrade-cost">0</span><input type="button" class="upgrade" id="circuit-max-upgrade" value="Max increase"><span id="circuit-max-cost">0</span>
+      <input type="button" class="auto" id="circuit-auto" value="Unlock Auto" ><span id="circuit-auto-cost">0</span><h3>Cost: 1 metal 2 energy</h3>
+      <h2>Circuit</h2>
+
+      <div class="back-bar"><input id="logicboard-input" type="button"><div class="bar" id="logicboard"></div></div><span id="logicboard-output" class="left-output">0</span><span class="mid-output">/</span><span id="logicboard-max" class="right-output">0</span>
+      <input type="button" class="upgrade" id="logicboard-upgrade" value="Upgrade"><span id="logicboard-upgrade-cost">0</span><input type="button" class="upgrade" id="logicboard-max-upgrade" value="Max increase"><span id="logicboard-max-cost">0</span>
+      <input type="button" class="auto" id="logicboard-auto" value="Unlock Auto" ><span id="logicboard-auto-cost">0</span><h3>Cost: 2 metal 2 circuit</h3>
+      <h2>logicboard</h2>
+
+
+      <div class="back-bar"><input id="chips-input" type="button"><div class="bar" id="chips"></div></div><span id="chips-output" class="left-output">0</span><span class="mid-output">/</span><span id="chips-max" class="right-output">0</span>
+      <input type="button" class="upgrade" id="chips-upgrade" value="Upgrade"><span id="chips-upgrade-cost">0</span><input type="button" class="upgrade" id="chips-max-upgrade" value="Max increase"><span id="chips-max-cost">0</span>
+      <input type="button" class="auto" id="chips-auto" value="Unlock Auto" ><span id="chips-auto-cost">0</span><h3>Cost: 2 energy 2 wire</h3>
+      <h2>Chips</h2>
+
+      <!--<div class="back-bar"><div class="bar" id="cables"></div></div>
+
+      <div class="back-bar2"><div class="bar2" id="motherboard"></div></div>
+      <div class="back-bar2"><div class="bar2" id="CPU"></div></div>
+      <div class="back-bar2"><div class="bar2" id="PC"></div></div>
+      <div class="back-bar2"><div class="bar2" id="software"></div></div>
+      <div class="back-bar2"><div class="bar2" id="A.I."></div></div>
+      <div class="back-bar2"><div class="bar2" id="quantum-computer"></div></div> -->
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="crafting_game.js"></script>
+   </body>
+</html>
